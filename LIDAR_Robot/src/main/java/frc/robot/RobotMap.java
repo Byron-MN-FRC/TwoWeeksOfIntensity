@@ -7,13 +7,23 @@
 
 package frc.robot;
 
+import edu.wpi.first.wpilibj.DigitalInput;
+
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
  * to a variable name. This provides flexibility changing wiring, makes checking
  * the wiring easier and significantly reduces the number of magic numbers
  * floating around.
  */
-public class RobotMap {
+public class RobotMap{
+  public static int talonIDRightMaster = 1;
+	public static int talonIDRightFollower = 2;
+	
+	public static int talonIDLeftMaster = 4;
+  public static int talonIDLeftFollower = 5;
+
+  public static DigitalInput proximityLidarSensor = new DigitalInput(0);
+  public static Boolean inRange = false;
   // For example to map the left and right motors, you could define the
   // following variables to use with your drivetrain subsystem.
   // public static int leftMotor = 1;
