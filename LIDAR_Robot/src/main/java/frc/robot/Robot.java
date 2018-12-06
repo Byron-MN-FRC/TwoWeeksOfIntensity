@@ -104,8 +104,6 @@ public class Robot extends TimedRobot {
     Scheduler.getInstance().run();
     RobotMap.inRange = RobotMap.proximityLidarSensor.get();
     SmartDashboard.putData(RobotMap.proximityLidarSensor);
-    SmartDashboard.putData(this.DIO2);
-    //SmartDashboard.putBoolean("Lidar Sensor", RobotMap.inRange);
   }
 
   @Override
@@ -127,7 +125,6 @@ public class Robot extends TimedRobot {
     Scheduler.getInstance().run();
     RobotMap.inRange = RobotMap.proximityLidarSensor.get();
     SmartDashboard.putData(RobotMap.proximityLidarSensor);
-    SmartDashboard.putData(this.DIO2);
   }
 
   /**
